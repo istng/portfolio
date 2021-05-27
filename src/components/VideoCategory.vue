@@ -3,7 +3,7 @@
     <h3>{{ title }}</h3>
     <ul id="video-list">
       <li v-for="video in videos" :key="video">
-        <Video :urlId='video' />
+        <Video :videoData='video' />
       </li>
     </ul>
   </div>

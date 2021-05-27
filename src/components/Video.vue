@@ -1,6 +1,6 @@
 <template>
   <div>
-    <iframe :src="youtubeUrl + urlId"></iframe>
+    <img id='video-thumbnail' :src='videoData.thumbnail'>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default defineComponent({
   components: {
   },
   props: {
-    urlId: String,
+    videoData: Object,
   },
   setup(props) {
     const youtubeUrl = ref('https://www.youtube.com/embed/');
@@ -23,3 +23,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style type="text/css">
+  #video-thumbnail {
+    width: 300px;
+  }
+</style>
