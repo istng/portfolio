@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img id='video-thumbnail' :src='videoData.thumbnail' @click="openVideo">
+    <img class='video-thumbnail' :src='videoData.thumbnail' @click="openVideo">
     <teleport to="body">
-      <div v-if="show" class="modal">
+      <div class="modal" v-if="show">
         <div>
           <iframe :src='youtubeUrl + videoData.urlId' @onClick='other'></iframe>
           <button @click="show = false">
@@ -42,13 +42,7 @@ export default defineComponent({
 </script>
 
 <style type="text/css">
-  #video-thumbnail {
-    width: 300px;
-  }
-
-  #black-box {
-    height: 200px;
-    width: 200px;
-    background-color: black;
+  .video-thumbnail {
+    width: 100%;
   }
 </style>
