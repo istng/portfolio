@@ -81,12 +81,16 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.modal:hover {
+  cursor: pointer;
 }
 </style>
