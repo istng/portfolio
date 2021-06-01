@@ -1,6 +1,9 @@
 <template>
   <div>
-    <img class='video-thumbnail' :src='videoData.thumbnail' @click="openVideo">
+    <div class="video-thumbnail-container" @click="openVideo">
+      <img class='video-thumbnail' :src='videoData.thumbnail'>
+      <img class="play-button" :src='playbutton'>
+    </div>
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
         <div>
@@ -14,6 +17,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import playbutton from '@/assets/play-button.png';
 
 export default defineComponent({
   name: 'Video',
@@ -34,6 +38,7 @@ export default defineComponent({
       youtubeUrl,
       show,
       openVideo,
+      playbutton,
     };
   }
 });
@@ -43,6 +48,27 @@ export default defineComponent({
 .video-thumbnail {
   width: 100%;
 }
+
+.video-thumbnail-container {
+  position: relative;
+  display: inline;
+}
+.play-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  background-color: #4B4B4B;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.play-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .video-window{
    border: 0;
    height: 85%;
