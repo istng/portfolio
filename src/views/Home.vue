@@ -24,8 +24,8 @@ export default defineComponent({
     Footer,
   },
   setup() {
-    const shorts = ref([{thumbnail: wip, urlId: "-K-z-N3I4uI"}, {thumbnail: wip, urlId: "Qv8q1ENfWBA"}, {thumbnail: wip, urlId: "j4z3xv2l9_k"}]);
-    const youtubes = ref([{thumbnail: nakatomi, urlId:"ve8gZ3UEMlU"}, {thumbnail: notshop, urlId:"rIZyQmS3L3w"}]);
+    const shorts = ref([{thumbnail: wip, urlId: "-K-z-N3I4uI", title: "Nacherrestre"}, {thumbnail: wip, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado"}, {thumbnail: wip, urlId: "j4z3xv2l9_k", title: "Frutilla"}]);
+    const youtubes = ref([{thumbnail: nakatomi, urlId: "ve8gZ3UEMlU", title: "nakatomi drive"}, {thumbnail: notshop, urlId: "rIZyQmS3L3w", title: "not in the shop"}]);
     return {
       shorts,
       youtubes,

@@ -3,6 +3,7 @@
     <div class="video-thumbnail-container" @click="openVideo">
       <img class='video-thumbnail' :src='videoData.thumbnail'>
       <img class="play-button" :src='playbutton'>
+      <h4 class="video-title">{{ videoData.title }}</h4>
     </div>
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
@@ -47,6 +48,10 @@ export default defineComponent({
 <style type="text/css">
 .video-thumbnail {
   width: 100%;
+}
+.video-title {
+  color: #c08e4f;
+  text-align: center;
 }
 
 .video-thumbnail-container {

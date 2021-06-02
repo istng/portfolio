@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{ title }}</h3>
+    <h3 class="category-title">{{ title }}</h3>
     <div class="video-list-container">
     <ul class="video-list">
       <li class="video-item-list" v-for="video in videos" :key="video.urlId">
@@ -43,5 +43,10 @@ export default defineComponent({
   columns: v-bind(videos.length) 200px;
   /*make space between title and video list smaller*/
   margin-top: 0;
+}
+
+.category-title {
+  color: white;
+  text-align: left;
 }
 </style>

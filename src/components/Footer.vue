@@ -1,6 +1,6 @@
 <template>
   <div>
-    Legal
+    <h4 class="legal-notice">Legal</h4>
   </div>
 </template>
 
@@ -13,3 +13,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style type="text/css">
+.legal-notice {
+  color: white;
+}
+</style>
