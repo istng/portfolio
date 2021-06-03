@@ -50,7 +50,7 @@ export default defineComponent({
   width: 100%;
 }
 .video-title {
-  color: #c08e4f;
+  color: #e9a44d;
   text-align: center;
 }
 

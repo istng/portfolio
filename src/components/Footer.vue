@@ -17,5 +17,6 @@ export default defineComponent({
 <style type="text/css">
 .legal-notice {
   color: white;
+  text-align: center;
 }
 </style>

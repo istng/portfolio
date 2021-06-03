@@ -1,7 +1,10 @@
 <template>
   <div class="header-container">
     <h2 class="name-title">Iván Guralnik</h2>
-    <h3 class="contact">gmail ig yt</h3>
+    <h3 class="contact">
+      <a class="contact-link" href="https://www.youtube.com/channel/UC0paZQh-P3ruttlq26UmNig" target=”_blank”>igk</a> <a class="contact-link" href="https://www.instagram.com/ivangk.gk/" target=”_blank”>@ivangk.gk</a>
+      ivanstng@gmail.com
+    </h3>
   </div>
 </template>
 
@@ -25,8 +28,11 @@ export default defineComponent({
   text-align: left;
 }
 .contact {
-  color: #c08e4f;
+  color: #e9a44d;
   text-align: right;
+}
+.contact-link {
+  color: #e9a44d;
 }
 .header-container {
   display: flex;
