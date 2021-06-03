@@ -33,6 +33,11 @@ export default defineComponent({
 
     const openVideo = () => {
       show.value = ! show.value;
+      window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
     }
 
     return {
