@@ -38,11 +38,20 @@ export default defineComponent({
   list-style-type: none;
   padding-left: 0;
   /*make list to behave as columns*/
-  -webkit-columns: v-bind(videos.length) 200px;
-  -moz-columns: v-bind(videos.length) 200px;
-  columns: v-bind(videos.length) 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   /*make space between title and video list smaller*/
   margin-top: 0;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+.video-item-list {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  min-width: 20rem;
+  max-width: 33%;
+  box-sizing: border-box;
 }
 
 .category-title {
