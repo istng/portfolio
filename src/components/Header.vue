@@ -36,5 +36,6 @@ export default defineComponent({
 }
 .header-container {
   display: flex;
+  align-items: center;
 }
 </style>
