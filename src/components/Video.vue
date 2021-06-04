@@ -8,8 +8,7 @@
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
         <div>
-          <iframe class="video-window" :src='youtubeUrl + videoData.urlId + "?autoplay=1"' @onClick='other'>
-        </iframe>
+          <iframe class="video-window" :src='youtubeUrl + videoData.urlId + "?autoplay=1"' @onClick='other'></iframe>
         </div>
       </div>
     </teleport>
@@ -33,11 +32,6 @@ export default defineComponent({
 
     const openVideo = () => {
       show.value = ! show.value;
-      window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth'
-      });
     }
 
     return {
@@ -91,13 +85,14 @@ export default defineComponent({
    width: 85%;
 }
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 .modal div {
   display: flex;
