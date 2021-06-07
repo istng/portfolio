@@ -5,6 +5,8 @@ para revisar
 
 
 escribir bio, y legal
+elegír font
 atajar el ir atras en mobile cuando se está en el video modal
 flip thumbnail con info del corto
+ajustar estética
 probar en internet
