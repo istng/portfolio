@@ -1,0 +1,29 @@
+bueno ahora si, quedan bugs
+	el overlay de playbutton se ve arriba del video abierto, habría que desactivarlo
+	mobile autoplay: el iframe, si no da autoplay, muestra el thumbnail de youtube deforme
+	youtube tira errores cuando abro videos
+	habría que ver temas de seguridad supongo
+
+diseño
+	terminar de poner contacto/legal y hacerlo funcional
+	agregar botón para cerrar video en mobile
+	agregar más info mia?
+
+arreglar
+	mejorar imagen de play
+	que los thumbnails esten todos del mismo tamaño independientemente de la categoría
+	que no scrollee con modal si no que aparezca ahi?
+	hacer que el fondo negro haga fade in en modal?
+
+probar en internet
+
+
+
+pasar como parametro width
+media query para youtube en mobile
+headline cine, ciencia, jazz, pop, programación
+mas espacio entre links de contacto
+
+a futuro
+	flip thumbnail con info del corto
+	mas info mio mas abajo
