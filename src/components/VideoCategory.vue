@@ -23,6 +23,7 @@ export default defineComponent({
   props: {
     title: String,
     videos: Array,
+    videosWidth: String,
   },
 });
 </script>
@@ -50,7 +51,7 @@ export default defineComponent({
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   min-width: 20rem;
-  max-width: 33%;
+  max-width: v-bind(videosWidth);
   box-sizing: border-box;
 }
 

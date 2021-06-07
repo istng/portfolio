@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <Header />
-    <VideoCategory title="Cortos" :videos='shorts'/>
-    <VideoCategory title="YouTube" :videos='youtubes'/>
+    <VideoCategory title="Cortos" :videos='shorts' videosWidth="33%"/>
+    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="50%"/>
     <Footer />
   </div>
 </template>
