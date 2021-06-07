@@ -3,6 +3,7 @@
     <Header />
     <VideoCategory title="Cortos" :videos='shorts' videosWidth="33%"/>
     <VideoCategory title="YouTube" :videos='youtubes' videosWidth="50%"/>
+    <Bio />
     <Footer />
   </div>
 </template>
@@ -11,6 +12,7 @@
 import { defineComponent, ref } from 'vue';
 import Header from '@/components/Header.vue';
 import VideoCategory from '@/components/VideoCategory.vue';
+import Bio from '@/components/Bio.vue';
 import Footer from '@/components/Footer.vue';
 import nakatomi from '@/assets/nakatomi-drive.png';
 import notshop from '@/assets/not-in-the-shop.png';
@@ -23,6 +25,7 @@ export default defineComponent({
   components: {
     Header,
     VideoCategory,
+    Bio,
     Footer,
   },
   setup() {
