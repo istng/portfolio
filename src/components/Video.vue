@@ -81,8 +81,16 @@ export default defineComponent({
 .video-window{
    border: 0;
    height: 85%;
-   position: absolute;
    width: 85%;
+   position: absolute;
+}
+@media (max-width: 768px) {
+  .video-window {
+    border: 0;
+    height: 35%;
+    width: 85%;
+    position: absolute;
+  }
 }
 .modal {
   position: fixed;
