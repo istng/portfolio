@@ -16,11 +16,6 @@ probar en internet
 
 
 
-pasar como parametro width
-media query para youtube en mobile
-headline cine, ciencia, jazz, pop, programación
-mas espacio entre links de contacto
-
 a futuro
 	flip thumbnail con info del corto
 	mas info mio mas abajo
