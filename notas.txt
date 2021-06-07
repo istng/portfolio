@@ -1,21 +1,10 @@
-bueno ahora si, quedan bugs
-	mobile autoplay: el iframe, si no da autoplay, muestra el thumbnail de youtube deforme
+para revisar
 	youtube tira errores cuando abro videos
 	habría que ver temas de seguridad supongo
-
-diseño
-	terminar de poner contacto/legal y hacerlo funcional
-	agregar botón para cerrar video en mobile
-	agregar más info mia?
-
-arreglar
-	mejorar imagen de play
 	hacer que el fondo negro haga fade in en modal?
 
+
+escribir bio, y legal
+atajar el ir atras en mobile cuando se está en el video modal
+flip thumbnail con info del corto
 probar en internet
-
-
-
-a futuro
-	flip thumbnail con info del corto
-	mas info mio mas abajo
