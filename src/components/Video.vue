@@ -74,7 +74,7 @@ export default defineComponent({
   -webkit-transition: opacity .25s ease-in-out;
 }
 .play-button:hover {
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
 }
 
