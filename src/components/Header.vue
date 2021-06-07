@@ -1,9 +1,11 @@
 <template>
   <div class="header-container">
-    <h2 class="name-title">Iván Guralnik</h2>
+    <div>
+      <h2 class="name-title">Iván Guralnik</h2>
+      <p class="pompadur"> cine, ciencia, jazz, programación </p>
+    </div>
     <h3 class="contact">
-      <a class="contact-link" href="https://www.youtube.com/channel/UC0paZQh-P3ruttlq26UmNig" target=”_blank”>igk</a> <a class="contact-link" href="https://www.instagram.com/ivangk.gk/" target=”_blank”>@ivangk.gk</a>
-      ivanstng@gmail.com
+      <a class="contact-link" href="https://www.youtube.com/channel/UC0paZQh-P3ruttlq26UmNig" target=”_blank”>igk</a> <a class="contact-link" href="https://www.instagram.com/ivangk.gk/" target=”_blank”>@ivangk.gk</a> ivanstng@gmail.com
     </h3>
   </div>
 </template>
@@ -26,9 +28,14 @@ export default defineComponent({
 .name-title {
   color: white;
   text-align: left;
+  margin-bottom: 0;
+}
+.pompadur {
+  margin-top: 0.4rem; 
 }
 .contact {
   color: #e9a44d;
+  word-spacing: 0.8rem;
   text-align: right;
 }
 .contact-link {
