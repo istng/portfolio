@@ -7,6 +7,6 @@ para revisar
 escribir bio, y legal
 elegír font
 atajar el ir atras en mobile cuando se está en el video modal
-flip thumbnail con info del corto
+icono del flip
 ajustar estética
 probar en internet
