@@ -29,8 +29,46 @@ export default defineComponent({
     Footer,
   },
   setup() {
-    const shorts = ref([{thumbnail: nacherrestre, urlId: "-K-z-N3I4uI", title: "Nacherrestre"}, {thumbnail: deshielo, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado"}, {thumbnail: frutilla, urlId: "j4z3xv2l9_k", title: "Frutilla"}]);
-    const youtubes = ref([{thumbnail: nakatomi, urlId: "ve8gZ3UEMlU", title: "nakatomi drive"}, {thumbnail: notshop, urlId: "rIZyQmS3L3w", title: "not in the shop"}]);
+    const shorts = ref([
+      {thumbnail: nacherrestre, urlId: "-K-z-N3I4uI", title: "Nacherrestre",
+      credits: {
+        directors: ["Gabriela Velazquez", "Iván Guralnik"], 
+        writers: ["Gabriela Velazquez", "Iván Guralnik"], 
+        cast: ["Ignacio Mariotti"], 
+        others: ["Alan Lampert"]
+        }
+      }, 
+      {thumbnail: deshielo, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
+      credits: {
+        directors: ["Gabriela Velazquez", "Iván Guralnik"], 
+        writers: ["Gabriela Velazquez", "Iván Guralnik"], 
+        cast: ["Franco Frizzo"], 
+        others: []
+        }
+      }, 
+        {thumbnail: frutilla, urlId: "j4z3xv2l9_k", title: "Frutilla", 
+        credits: {
+          directors: ["Gabriela Velazquez"], 
+          writers: ["Gabriela Velazquez"], 
+          cast: ["Elvis X", "Aldana Y"], 
+          others: ["David Xu Barco"]
+          }
+      }
+    ]);
+    const youtubes = ref([
+      {thumbnail: nakatomi, urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
+      credits: {
+        scenes: "Die Hard, 1988",
+        sound: "Future Shock, Herbie Hancock"
+        }
+      }, 
+      {thumbnail: notshop, urlId: "rIZyQmS3L3w", title: "not in the shop", 
+      credits: {
+        scenes: "Star Trek: Deep Space 9, 1993",
+        sound: "Dragon Ball Z OST, Prologue & Subtitle I"
+        }
+      }
+    ]);
     return {
       shorts,
       youtubes,

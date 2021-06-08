@@ -1,9 +1,26 @@
 <template>
   <div>
-    <div class="video-thumbnail-container" @click="openVideo">
-      <img class='video-thumbnail' :src='videoData.thumbnail'>
-      <img class="play-button" :src='playbutton'>
-    </div>
+    <FlipCard>
+      <template v-slot:front>
+        <span>
+          <div class="video-thumbnail-container" @click="openVideo">
+            <img class='video-thumbnail' :src='videoData.thumbnail'>
+            <img class="play-button" :src='playbutton'>
+          </div>
+        </span>
+      </template>
+      <template v-slot:back>
+        <span>
+          <div class="back-container">
+            <img class="back-thumbnail" :src='backflip'>
+            <div class="back-credits">
+              {{ videoData.credits }}
+            </div>
+          </div>
+        </span>
+      </template>
+    </FlipCard>
+
       <h4 class="video-title">{{ videoData.title }}</h4>
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
@@ -17,11 +34,14 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import FlipCard from '@/components/FlipCard.vue';
 import playbutton from '@/assets/play-button.png';
+import backflip from '@/assets/back-flip.png';
 
 export default defineComponent({
   name: 'Video',
   components: {
+    FlipCard,
   },
   props: {
     videoData: Object,
@@ -39,12 +59,30 @@ export default defineComponent({
       show,
       openVideo,
       playbutton,
+      backflip,
     };
   }
 });
 </script>
 
 <style type="text/css">
+.back-thumbnail {
+  width: 100%;
+  border-radius: 25px;
+  opacity: 20%;
+  grid-column: 1;
+  grid-row: 1;
+}
+.back-credits {
+  grid-column: 1;
+  grid-row: 1;
+}
+.back-container {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+}
+
 .video-thumbnail {
   grid-column: 1;
   grid-row: 1;
@@ -100,7 +138,7 @@ export default defineComponent({
   align-items: center;
   justify-content: center; 
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 3;
 }
 .modal div {
   display: flex;
