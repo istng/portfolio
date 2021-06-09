@@ -115,7 +115,7 @@ i.backFlipBtn {
 .backFlipBtn {
   position:absolute;
   top:3%;
-  left:92%;
+  left:93.5%;
 }
 .back-card {
   position:absolute;
@@ -125,8 +125,8 @@ i.backFlipBtn {
 
 .frontFlipBtn {
   position:absolute;
-  top:3%;
-  left:92%;
+  top:0%;
+  left:93.5%;
   z-index: 2;
 }
 .front-card {
@@ -135,7 +135,7 @@ i.backFlipBtn {
   left:0;
 }
 .flip-icon {
-  width: 55%;
+  width: 70%;
   transform: rotate(140deg);
   opacity: 0.7;
 }
