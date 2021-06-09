@@ -2,9 +2,9 @@ para revisar
 	youtube tira errores cuando abro videos
 	habría que ver temas de seguridad supongo
 	hacer que el fondo negro haga fade in en modal?
+	sacar grid de thumbnails (no de backs) rompe algo de flex parece...
 
 
-cambiar grid overlap por sin grid!
 hacer credit card bien
 atajar el ir atras en mobile cuando se está en el video modal
 escribir bio, y legal
