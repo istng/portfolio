@@ -11,12 +11,7 @@
       </template>
       <template v-slot:back>
         <span>
-          <div class="back-container">
-            <img class="back-thumbnail" :src='backflip'>
-            <div class="back-credits">
-              {{ videoData.credits }}
-            </div>
-          </div>
+          <CreditsCard :credits='videoData.credits' />
         </span>
       </template>
     </FlipCard>
@@ -35,13 +30,14 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import FlipCard from '@/components/FlipCard.vue';
+import CreditsCard from '@/components/CreditsCard.vue';
 import playbutton from '@/assets/play-button.png';
-import backflip from '@/assets/back-flip.png';
 
 export default defineComponent({
   name: 'Video',
   components: {
     FlipCard,
+    CreditsCard,
   },
   props: {
     videoData: Object,
@@ -59,30 +55,12 @@ export default defineComponent({
       show,
       openVideo,
       playbutton,
-      backflip,
     };
   }
 });
 </script>
 
 <style type="text/css">
-.back-thumbnail {
-  width: 100%;
-  border-radius: 25px;
-  opacity: 20%;
-  grid-column: 1;
-  grid-row: 1;
-}
-.back-credits {
-  grid-column: 1;
-  grid-row: 1;
-}
-.back-container {
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  position: relative;
-}
-
 .video-thumbnail {
   grid-column: 1;
   grid-row: 1;
@@ -111,9 +89,11 @@ export default defineComponent({
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
-.play-button:hover {
-  opacity: 0.6;
-  cursor: pointer;
+@media (min-width: 770px) {
+  .play-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 }
 
 .video-window{

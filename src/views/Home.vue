@@ -32,40 +32,53 @@ export default defineComponent({
     const shorts = ref([
       {thumbnail: nacherrestre, urlId: "-K-z-N3I4uI", title: "Nacherrestre",
       credits: {
+        type: "short",
         directors: ["Gabriela Velazquez", "Iván Guralnik"], 
         writers: ["Gabriela Velazquez", "Iván Guralnik"], 
+        editors: ["Iván Guralnik", "Gabriela Velazquez"], 
         cast: ["Ignacio Mariotti"], 
-        others: ["Alan Lampert"]
+        others: [["Dirección Artística", ["Alan Lampert"]]],
+        awards: []
         }
       }, 
       {thumbnail: deshielo, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
       credits: {
+        type: "short",
         directors: ["Gabriela Velazquez", "Iván Guralnik"], 
-        writers: ["Gabriela Velazquez", "Iván Guralnik"], 
+        writers: ["Iván Guralnik", "Gabriela Velazquez"], 
+        editors: ["Iván Guralnik", "Gabriela Velazquez"], 
         cast: ["Franco Frizzo"], 
-        others: []
+        others: [],
+        awards: ["Cuarto lugar en..."]
         }
       }, 
         {thumbnail: frutilla, urlId: "j4z3xv2l9_k", title: "Frutilla", 
         credits: {
-          directors: ["Gabriela Velazquez"], 
+          type: "short",
+          directors: ["Gabriela Velazquez", "Iván Guralnik"], 
           writers: ["Gabriela Velazquez"], 
+          editors: ["Iván Guralnik", "Gabriela Velazquez"], 
           cast: ["Elvis X", "Aldana Y"], 
-          others: ["David Xu Barco"]
+          others: [["Productor", ["David Xu Barco"]]],
+          awards: ["Aprobado como trabajo para ingreso a..."]
           }
       }
     ]);
     const youtubes = ref([
       {thumbnail: nakatomi, urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
       credits: {
-        scenes: "Die Hard, 1988",
-        sound: "Future Shock, Herbie Hancock"
+        type: "youtube",
+        creators: ["Iván Guralnik"], 
+        scenes: ["Die Hard, 1988"],
+        sounds: ["Future Shock, Herbie Hancock"]
         }
       }, 
       {thumbnail: notshop, urlId: "rIZyQmS3L3w", title: "not in the shop", 
       credits: {
-        scenes: "Star Trek: Deep Space 9, 1993",
-        sound: "Dragon Ball Z OST, Prologue & Subtitle I"
+        type: "youtube",
+        creators: ["Iván Guralnik"], 
+        scenes: ["Star Trek: Deep Space 9, 1993"],
+        sounds: ["Dragon Ball Z OST, Prologue & Subtitle I"]
         }
       }
     ]);
