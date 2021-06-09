@@ -33,7 +33,7 @@ export default defineComponent({
       {thumbnail: nacherrestre, urlId: "-K-z-N3I4uI", title: "Nacherrestre",
       credits: {
         type: "short",
-        directors: ["Gabriela Velazquez", "Iván Guralnik"], 
+        directors: ["Iván Guralnik", "Gabriela Velazquez"], 
         writers: ["Gabriela Velazquez", "Iván Guralnik"], 
         editors: ["Iván Guralnik", "Gabriela Velazquez"], 
         cast: ["Ignacio Mariotti"], 
@@ -44,7 +44,7 @@ export default defineComponent({
       {thumbnail: deshielo, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
       credits: {
         type: "short",
-        directors: ["Gabriela Velazquez", "Iván Guralnik"], 
+        directors: ["Iván Guralnik", "Gabriela Velazquez"], 
         writers: ["Iván Guralnik", "Gabriela Velazquez"], 
         editors: ["Iván Guralnik", "Gabriela Velazquez"], 
         cast: ["Franco Frizzo"], 

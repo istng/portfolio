@@ -3,9 +3,17 @@
     <img class="back-thumbnail" :src='backflip'>
     <div class="back-credits">
       <div v-if="credits.type == 'short'">
-        <strong>Dirección:</strong> {{ credits.directors.join(', ') }} <br>
+        <!--<strong>Dirección:</strong> {{ credits.directors.join(', ') }} <br>
         <strong>Guión:</strong> {{ credits.writers.join(', ') }} <br>
         <strong>Editores:</strong> {{ credits.editors.join(', ') }} <br>
+        -->
+        <div v-if="credits.writers.length > 1">
+          <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+        </div>
+        <div v-else>
+          <strong>Idea y guión original:</strong> {{ credits.writers.join(', ') }} <br>
+          <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+        </div>
         <strong>Cast:</strong> {{ credits.cast.join(', ') }} <br>
         <div v-for="other in credits.others" :key="other[1]">
           <strong>{{ other[0] }}:</strong> {{ other[1].join(', ') }} <br>
