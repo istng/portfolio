@@ -49,7 +49,7 @@ export default defineComponent({
         editors: ["Iván Guralnik", "Gabriela Velazquez"], 
         cast: ["Franco Frizzo"], 
         others: [],
-        awards: ["Cuarto lugar en..."]
+        awards: ["Cuarto lugar en la Octava Edición del Festival Internacional de Cine sobre el Trabajo."]
         }
       }, 
         {thumbnail: frutilla, urlId: "j4z3xv2l9_k", title: "Frutilla", 
@@ -60,7 +60,7 @@ export default defineComponent({
           editors: ["Iván Guralnik", "Gabriela Velazquez"], 
           cast: ["Elvis X", "Aldana Y"], 
           others: [["Productor", ["David Xu Barco"]]],
-          awards: ["Aprobado como trabajo para ingreso a..."]
+          awards: ["Aprobado para el ingreso a la ESCAC, Barcelona."]
           }
       }
     ]);
