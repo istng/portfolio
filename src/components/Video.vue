@@ -19,6 +19,9 @@
       <h4 class="video-title">{{ videoData.title }}</h4>
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
+      <div>
+        <img class="close-button" :src="closebutton">
+      </div>
         <div>
           <iframe class="video-window" :src='youtubeUrl + videoData.urlId + "?autoplay=1"' @onClick='other'></iframe>
         </div>
@@ -32,6 +35,7 @@ import { defineComponent, ref } from 'vue';
 import FlipCard from '@/components/FlipCard.vue';
 import CreditsCard from '@/components/CreditsCard.vue';
 import playbutton from '@/assets/play-button.png';
+import closebutton from '@/assets/close-button.png';
 
 export default defineComponent({
   name: 'Video',
@@ -48,13 +52,14 @@ export default defineComponent({
 
     const openVideo = () => {
       show.value = ! show.value;
-    }
+    };
 
     return {
       youtubeUrl,
       show,
       openVideo,
       playbutton,
+      closebutton,
     };
   }
 });
@@ -94,8 +99,20 @@ export default defineComponent({
     opacity: 0.6;
     cursor: pointer;
   }
+  .close-button {
+    display: none;
+    visibility: hidden;
+  }
 }
 
+.close-button {
+  width: 8%;
+  z-index: 4;
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  filter: contrast(52%);
+}
 .video-window{
    border: 0;
    height: 85%;
@@ -110,6 +127,7 @@ export default defineComponent({
     position: absolute;
   }
 }
+
 .modal {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
