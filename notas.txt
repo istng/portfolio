@@ -3,12 +3,15 @@ para revisar
 	habría que ver temas de seguridad supongo
 	hacer que el fondo negro haga fade in en modal?
 	sacar grid de thumbnails (no de backs) rompe algo de flex parece...
+	estaría bueno atajar el back slide swipe para atras cuando está abierto un video
 
 
 hacer credit card bien
-atajar el ir atras en mobile cuando se está en el video modal
+
 escribir bio, y legal
 elegír font
 icono del flip
+retocar icono de close video en mobile
 ajustar estética
+
 probar en internet
