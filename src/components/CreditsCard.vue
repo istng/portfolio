@@ -37,7 +37,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import backflip from '@/assets/back-flip.png';
 
 export default defineComponent({
   name: 'CreditsCard',
@@ -47,11 +46,6 @@ export default defineComponent({
     credits: Object,
     backThumbnail: String,
   },
-  setup(props) {
-    return {
-      backflip,
-    };
-  }
 });
 </script>
 
