@@ -21,7 +21,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import flipicon from '@/assets/redo-alt-solid.svg';
+import flipicon from '@/assets/redo-alt-solid.png';
 
 export default defineComponent({
   name: 'FlipCard',
