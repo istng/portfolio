@@ -8,11 +8,11 @@
             <img class="flip-icon" :src="flipicon">
         </div>
       </div>
-      <div class="back">
+      <div class="back" v-on:click="flipped=false">
         <slot class="back-card" name="back"></slot>
         <div class="backFlipBtn" 
-            v-on:click="flipped=false">
-            <img class="flip-icon" :src="flipicon">
+            >
+            <img class="flip-icon" :src="flipicon" >
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import flipicon from '@/assets/flip-icon.png';
+import flipicon from '@/assets/redo-alt-solid.svg';
 
 export default defineComponent({
   name: 'FlipCard',
@@ -114,8 +114,11 @@ i.backFlipBtn {
 
 .backFlipBtn {
   position:absolute;
-  top:3%;
-  left:93.5%;
+  top:10%;
+  left:90%;
+  z-index: 2;
+  display: none;
+  visibility: hidden;
 }
 .back-card {
   position:absolute;
@@ -125,8 +128,8 @@ i.backFlipBtn {
 
 .frontFlipBtn {
   position:absolute;
-  top:0%;
-  left:93.5%;
+  top:3%;
+  left:91%;
   z-index: 2;
 }
 .front-card {
@@ -135,8 +138,7 @@ i.backFlipBtn {
   left:0;
 }
 .flip-icon {
-  width: 70%;
-  transform: rotate(140deg);
-  opacity: 0.7;
+  width: 62%;
+  opacity: 0.5;
 }
 </style>
