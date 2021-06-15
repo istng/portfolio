@@ -53,6 +53,7 @@ export default defineComponent({
 .pompadur {
   margin-top: 0.4rem;
   margin-bottom: 0.8rem;
+  color: white;
 }
 .contact {
   margin-top: 0.6rem; 
