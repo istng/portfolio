@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="category-title">{{ title }}</h3>
+    <h2 class="category-title">{{ title }}</h2>
     <div class="video-list-container">
     <ul class="video-list">
       <li class="video-item-list" v-for="video in videos" :key="video.urlId">
@@ -58,5 +58,11 @@ export default defineComponent({
 .category-title {
   color: white;
   text-align: left;
+  margin-left: 2rem;
+}
+@media (width: 411px) {
+  .category-title {
+    margin-left: 3rem;
+  }
 }
 </style>
