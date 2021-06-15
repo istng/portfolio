@@ -5,13 +5,10 @@ para revisar
 	sacar grid de thumbnails (no de backs) rompe algo de flex parece...
 	estaría bueno atajar el back slide swipe para atras cuando está abierto un video
 
+centrar texto en credit card
 
-hacer credit card bien
 escribir bio, y legal
 elegír font
-icono del flip
-retocar icono de close video en mobile
-ajustar estética
-cambiar fav icon de la pestaña
+rehacer favicon estilizado
 
 probar en internet
