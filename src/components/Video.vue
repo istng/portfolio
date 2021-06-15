@@ -111,7 +111,7 @@ export default defineComponent({
   z-index: 4;
   position: absolute;
   top: 30%;
-  left: 4%;
+  left: 3.5%;
   filter: contrast(52%);
 }
 .video-window{
