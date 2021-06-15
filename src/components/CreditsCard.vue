@@ -1,31 +1,35 @@
 <template>
   <div class="back-container">
-    <img class="back-thumbnail" :src='backflip'>
-    <div class="back-credits">
-      <div v-if="credits.type == 'short'">
-        <div v-if="credits.writers.length > 1">
+    <div class="back-thumbnail-container">
+      <img class="back-thumbnail" :src='backThumbnail'>
+    </div>
+    <div class="back-credits-container">
+      <div class="back-credits">
+        <div v-if="credits.type == 'short'">
+          <div v-if="credits.writers.length > 1">
+            <br>
+            <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+          </div>
+          <div v-else>
+            <strong>Guión original:</strong> {{ credits.writers.join(', ') }} <br>
+            <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+          </div>
           <br>
-          <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+          <strong>Cast:</strong> {{ credits.cast.join(', ') }} <br>
+          <div v-for="other in credits.others" :key="other[1]">
+            <strong>{{ other[0] }}:</strong> {{ other[1].join(', ') }} <br>
+          </div>
+          <br>
+          <strong v-if="credits.awards.join(', ') != ''">Premios o menciones:</strong> {{ credits.awards.join(', ') }} <br>
         </div>
-        <div v-else>
-          <strong>Guión original:</strong> {{ credits.writers.join(', ') }} <br>
-          <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+        <div v-if="credits.type == 'youtube'">
+          <br>
+          <strong>Idea y edición:</strong> {{ credits.creators.join(', ') }} <br>
+          <br>
+          <strong>Escenas:</strong> {{ credits.scenes.join(', ') }} <br>
+          <br>
+          <strong>Música:</strong> {{ credits.sounds.join(', ') }} <br>
         </div>
-        <br>
-        <strong>Cast:</strong> {{ credits.cast.join(', ') }} <br>
-        <div v-for="other in credits.others" :key="other[1]">
-          <strong>{{ other[0] }}:</strong> {{ other[1].join(', ') }} <br>
-        </div>
-        <br>
-        <strong v-if="credits.awards.join(', ') != ''">Premios o menciones:</strong> {{ credits.awards.join(', ') }} <br>
-      </div>
-      <div v-if="credits.type == 'youtube'">
-        <br>
-        <strong>Idea y edición:</strong> {{ credits.creators.join(', ') }} <br>
-        <br>
-        <strong>Escenas:</strong> {{ credits.scenes.join(', ') }} <br>
-        <br>
-        <strong>Música:</strong> {{ credits.sounds.join(', ') }} <br>
       </div>
     </div>
   </div>
@@ -41,6 +45,7 @@ export default defineComponent({
   },
   props: {
     credits: Object,
+    backThumbnail: String,
   },
   setup(props) {
     return {
@@ -53,11 +58,13 @@ export default defineComponent({
 <style type="text/css">
 .back-thumbnail {
   width: 100%;
-  border-radius: 25px;
-  opacity: 15%;
+  opacity: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 25px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .back-credits {
   position: absolute;

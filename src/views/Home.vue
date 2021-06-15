@@ -19,6 +19,11 @@ import notshop from '@/assets/not-in-the-shop.png';
 import nacherrestre from '@/assets/nacherrestre.png';
 import deshielo from '@/assets/deshielo.png';
 import frutilla from '@/assets/frutilla.png';
+import nakatomiblur from '@/assets/nakatomi-drive-blur.png';
+import notshopblur from '@/assets/not-in-the-shop-blur.png';
+import nacherrestreblur from '@/assets/nacherrestre-blur.png';
+import deshieloblur from '@/assets/deshielo-blur.png';
+import frutillablur from '@/assets/frutilla-blur.png';
 
 export default defineComponent({
   name: 'Home',
@@ -30,7 +35,7 @@ export default defineComponent({
   },
   setup() {
     const shorts = ref([
-      {thumbnail: nacherrestre, urlId: "-K-z-N3I4uI", title: "Nacherrestre",
+      {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "-K-z-N3I4uI", title: "Nacherrestre",
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -41,7 +46,7 @@ export default defineComponent({
         awards: []
         }
       }, 
-      {thumbnail: deshielo, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
+      {thumbnail: deshielo, blurredThumbnail: deshieloblur, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -52,20 +57,20 @@ export default defineComponent({
         awards: ["Cuarto lugar en la Octava Edición del Festival Internacional de Cine sobre el Trabajo."]
         }
       }, 
-        {thumbnail: frutilla, urlId: "j4z3xv2l9_k", title: "Frutilla", 
+        {thumbnail: frutilla, blurredThumbnail: frutillablur, urlId: "j4z3xv2l9_k", title: "Frutilla", 
         credits: {
           type: "short",
           directors: ["Gabriela Velazquez", "Iván Guralnik"], 
           writers: ["Gabriela Velazquez"], 
           editors: ["Iván Guralnik", "Gabriela Velazquez"], 
-          cast: ["Elvis X", "Aldana Y"], 
+          cast: ["Aldana Casarrubia", "Elvis Alvarado"], 
           others: [["Productor", ["David Xu Barco"]]],
           awards: ["Aprobado para el ingreso a la ESCAC, Barcelona."]
           }
       }
     ]);
     const youtubes = ref([
-      {thumbnail: nakatomi, urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
+      {thumbnail: nakatomi, blurredThumbnail: nakatomiblur, urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
       credits: {
         type: "youtube",
         creators: ["Iván Guralnik"], 
@@ -73,7 +78,7 @@ export default defineComponent({
         sounds: ["Future Shock, Herbie Hancock"]
         }
       }, 
-      {thumbnail: notshop, urlId: "rIZyQmS3L3w", title: "not in the shop", 
+      {thumbnail: notshop, blurredThumbnail: notshopblur, urlId: "rIZyQmS3L3w", title: "not in the shop", 
       credits: {
         type: "youtube",
         creators: ["Iván Guralnik"], 

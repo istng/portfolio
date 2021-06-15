@@ -11,12 +11,12 @@
       </template>
       <template v-slot:back>
         <span>
-          <CreditsCard :credits='videoData.credits' />
+          <CreditsCard :credits='videoData.credits' :backThumbnail='videoData.blurredThumbnail' />
         </span>
       </template>
     </FlipCard>
 
-      <h4 class="video-title">{{ videoData.title }}</h4>
+      <h3 class="video-title">{{ videoData.title }}</h3>
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
       <div>
@@ -75,6 +75,7 @@ export default defineComponent({
 .video-title {
   color: #e9a44d;
   text-align: center;
+  font-weight:normal;
 }
 
 .video-thumbnail-container {
