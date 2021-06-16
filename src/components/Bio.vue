@@ -29,7 +29,6 @@ export default defineComponent({
 }
 .bio-body-container {
   display: flex;
-  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .bio-body-container {
