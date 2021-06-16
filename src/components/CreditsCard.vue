@@ -69,4 +69,7 @@ export default defineComponent({
   position: relative;
   color: black;
 }
+.back-container:hover {
+  cursor: pointer;
+}
 </style>
