@@ -5,10 +5,8 @@ para revisar
 	sacar grid de thumbnails (no de backs) rompe algo de flex parece...
 	estaría bueno atajar el back slide swipe para atras cuando está abierto un video
 
-centrar texto en credit card
 
-escribir bio, y legal
-elegír font
-rehacer favicon estilizado
+centrar texto en credit card
+repasar icono, título de pagina, y bio
 
 probar en internet
