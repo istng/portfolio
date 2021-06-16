@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="legal-notice">Legal</h4>
+    <h5 class="legal-notice">© 2021 Iván Guralnik</h5>
   </div>
 </template>
 
@@ -18,5 +18,6 @@ export default defineComponent({
 .legal-notice {
   color: white;
   text-align: center;
+  font-weight: normal;
 }
 </style>

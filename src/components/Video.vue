@@ -75,7 +75,7 @@ export default defineComponent({
 .video-title {
   color: #e9a44d;
   text-align: center;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 .video-thumbnail-container {
