@@ -60,7 +60,6 @@ export default defineComponent({
   margin-bottom: 0.6rem; 
   color: #e9a44d;
   word-spacing: 0.8rem;
-  text-align: right;
 }
 .contact-link {
   color: #e9a44d;
