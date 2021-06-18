@@ -15,8 +15,8 @@
         </span>
       </template>
     </FlipCard>
+    <h3 class="video-title">{{ videoData.title }}</h3>
 
-      <h3 class="video-title">{{ videoData.title }}</h3>
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
       <div>
