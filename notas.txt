@@ -10,3 +10,4 @@ centrar texto en credit card
 repasar icono, título de pagina, y bio
 
 probar en internet
+	en firebase anda, por ahí conseguir un dominion piola
