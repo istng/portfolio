@@ -1,8 +1,6 @@
 <template>
   <div class="back-container">
-    <div class="back-thumbnail-container">
-      <img class="back-thumbnail" :src='backThumbnail'>
-    </div>
+    <img class="back-thumbnail" :src='backThumbnail'>
     <div class="back-credits-container">
       <div class="back-credits">
         <div v-if="credits.type == 'short'">
@@ -52,7 +50,6 @@ export default defineComponent({
 <style type="text/css">
 .back-thumbnail {
   width: 100%;
-  opacity: 100%;
   position: absolute;
   top: 0;
   left: 0;
