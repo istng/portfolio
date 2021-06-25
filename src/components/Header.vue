@@ -7,7 +7,7 @@
       <p class="pompadur"> cine, jazz, programación </p>
     </div>
     <h3 class="contact">
-      <a class="contact-link" href="https://www.youtube.com/channel/UC0paZQh-P3ruttlq26UmNig" target=”_blank”><font-awesome-icon :icon="['fab', 'youtube']"/></a> <a class="contact-link" href="https://www.instagram.com/ivangk.gk/" target=”_blank”><font-awesome-icon :icon="['fab', 'instagram']"/></a> <a href="mailto:ivanstng@gmail.com"><font-awesome-icon :icon="['far', 'envelope']"/></a>
+      <a href="https://www.youtube.com/channel/UC0paZQh-P3ruttlq26UmNig" target=”_blank”><font-awesome-icon :icon="['fab', 'youtube']"/></a> <a href="https://www.instagram.com/ivangk.gk/" target=”_blank”><font-awesome-icon :icon="['fab', 'instagram']"/></a> <a href="https://github.com/istng" target=”_blank”><font-awesome-icon :icon="['fab', 'github']"/></a> <a href="mailto:ivanstng@gmail.com"><font-awesome-icon :icon="['far', 'envelope']"/></a>
     </h3>
   </div>
 </template>
@@ -15,11 +15,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 library.add(faInstagram);
 library.add(faYoutube);
+library.add(faGithub);
 library.add(faEnvelope);
 
 export default defineComponent({
@@ -60,9 +61,6 @@ export default defineComponent({
   margin-bottom: 0.6rem; 
   color: #e9a44d;
   word-spacing: 0.8rem;
-}
-.contact-link {
-  color: #e9a44d;
 }
 .header-container {
   display: flex;
