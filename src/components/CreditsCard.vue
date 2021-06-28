@@ -32,11 +32,21 @@
           </div>
         </div>
         <div v-if="credits.type == 'youtube'">
-          <strong>Idea y edición:</strong> {{ credits.creators.join(', ') }} <br>
-          <br>
-          <strong>Escenas:</strong> {{ credits.scenes.join(', ') }} <br>
-          <br>
-          <strong>Música:</strong> {{ credits.sounds.join(', ') }} <br>
+          <div class="credits-section">
+            <div class="credits-line">
+              <strong>Idea y edición:</strong> {{ credits.creators.join(', ') }}
+            </div>
+          </div>
+          <div class="credits-section">
+            <div class="credits-line">
+              <strong>Escenas:</strong> {{ credits.scenes.join(', ') }}
+            </div>
+          </div>
+          <div class="credits-section">
+            <div class="credits-line">
+              <strong>Música:</strong> {{ credits.sounds.join(', ') }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
