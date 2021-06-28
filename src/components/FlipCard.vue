@@ -92,7 +92,8 @@ i.backFlipBtn {
   transform: rotateY(-180deg);
   position: absolute;
   grid-column: 1;
-  grid-row: 1;  
+  grid-row: 1;
+  height: 100%;
 }
 .flip-container.flipped .back {
   -webkit-transform: rotateY(0deg);

@@ -4,24 +4,34 @@
     <div class="back-credits-container">
       <div class="back-credits">
         <div v-if="credits.type == 'short'">
-          <div v-if="credits.writers.length > 1">
-            <br>
-            <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+          <div class="credits-section">
+            <div class="credits-line" v-if="credits.writers.length > 1">
+              <strong>Realizado por:</strong> {{ credits.directors.join(', ') }}
+            </div>
+            <template v-else>
+              <div class="credits-line">
+                <strong>Guión original:</strong> {{ credits.writers.join(', ') }}
+              </div>
+              <div class="credits-line">
+                <strong>Realizado por:</strong> {{ credits.directors.join(', ') }}
+              </div>
+            </template>
           </div>
-          <div v-else>
-            <strong>Guión original:</strong> {{ credits.writers.join(', ') }} <br>
-            <strong>Realizado por:</strong> {{ credits.directors.join(', ') }} <br>
+          <div class="credits-section">
+            <div class="credits-line">
+              <strong>Cast:</strong> {{ credits.cast.join(', ') }}
+            </div>
+            <div class="credits-line" v-for="other in credits.others" :key="other[1]">
+              <strong>{{ other[0] }}:</strong> {{ other[1].join(', ') }}
+            </div>
           </div>
-          <br>
-          <strong>Cast:</strong> {{ credits.cast.join(', ') }} <br>
-          <div v-for="other in credits.others" :key="other[1]">
-            <strong>{{ other[0] }}:</strong> {{ other[1].join(', ') }} <br>
+          <div class="credits-section" v-if="credits.awards.length > 0">
+            <div class="credits-line">
+              <strong>Premios o menciones:</strong> {{ credits.awards.join(', ') }}
+            </div>
           </div>
-          <br>
-          <strong v-if="credits.awards.join(', ') != ''">Premios o menciones:</strong> {{ credits.awards.join(', ') }} <br>
         </div>
         <div v-if="credits.type == 'youtube'">
-          <br>
           <strong>Idea y edición:</strong> {{ credits.creators.join(', ') }} <br>
           <br>
           <strong>Escenas:</strong> {{ credits.scenes.join(', ') }} <br>
@@ -48,6 +58,14 @@ export default defineComponent({
 </script>
 
 <style type="text/css">
+.back-container {
+  position: relative;
+  height: 100%;
+  color: black;
+}
+.back-container:hover {
+  cursor: pointer;
+}
 .back-thumbnail {
   width: 100%;
   position: absolute;
@@ -57,16 +75,26 @@ export default defineComponent({
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.back-credits {
-  position: absolute;
-  left: 5%;
-  color: white;
-}
-.back-container {
+.back-credits-container {
   position: relative;
-  color: black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
-.back-container:hover {
-  cursor: pointer;
+.back-credits {
+  color: white;
+  padding: 5%;
+}
+.credits-section:not(:last-child) {
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .back-credits {
+    font-size: 0.9rem;
+  }
+.credits-section:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
 }
 </style>
