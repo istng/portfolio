@@ -35,7 +35,7 @@ export default defineComponent({
   },
   setup() {
     const shorts = ref([
-      {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "-K-z-N3I4uI", title: "Nacherrestre",
+      {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "-K-z-N3I4uI", title: "Nacherrestre (Título Provisional)",
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
