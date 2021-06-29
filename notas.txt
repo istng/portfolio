@@ -6,8 +6,7 @@ para revisar
 	estaría bueno atajar el back slide swipe para atras cuando está abierto un video
 
 
-repasar icono, título de pagina, y bio
-media calls para pads
+repasar icono
 
 probar en internet
 	en firebase anda, por ahí conseguir un dominion piola
