@@ -6,9 +6,9 @@ This is a personal web portfolio made with Vue.js to showcase my shorts and edit
 
 The built version looks like this:
 
-GIF desktop
+![Desktop view](.docs/desktop.mp4)
 
-GIF mobile
+![Mobile view](.docs/mobile.mp4)
 
 ### Project Structure
 
