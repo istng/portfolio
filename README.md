@@ -6,9 +6,9 @@ This is a personal web portfolio made with Vue.js to showcase my shorts and edit
 
 The built version looks like this:
 
-![Desktop view](.docs/desktop.mp4)
+https://user-images.githubusercontent.com/19519872/123815444-e0b7c500-d8cc-11eb-94b7-6dd5c5cf15e5.mp4
 
-![Mobile view](.docs/mobile.mp4)
+https://user-images.githubusercontent.com/19519872/123815456-e3b2b580-d8cc-11eb-90c7-50cdaa998e52.mp4
 
 ### Project Structure
 
