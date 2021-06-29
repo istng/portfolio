@@ -1,4 +1,5 @@
 para revisar
+	usar dominio piola
 	youtube tira errores cuando abro videos
 	habría que ver temas de seguridad supongo
 	hacer que el fondo negro haga fade in en modal?
@@ -7,6 +8,3 @@ para revisar
 
 
 repasar icono
-
-probar en internet
-	en firebase anda, por ahí conseguir un dominion piola
