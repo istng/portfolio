@@ -1,6 +1,6 @@
 # Personal Web Portfolio
 
-This is a personal web portfolio made with Vue.js to show case my shorts and edited videos. It was also a way to learn and apply my knwoledge of JavaScript, Vue.js and design and CSS.  
+This is a personal web portfolio made with Vue.js to showcase my shorts and edited videos. It was also a way to learn and apply my knwoledge of JavaScript, Vue.js, design and CSS.  
 
 ## Built Look
 
