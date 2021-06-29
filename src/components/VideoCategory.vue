@@ -65,4 +65,9 @@ export default defineComponent({
     margin-left: 3rem;
   }
 }
+@media (width: 540px) and (height: 720px) {
+  .category-title {
+    margin-left: 7rem;
+  }
+}
 </style>
