@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <Header />
-    <VideoCategory title="Cortos Publicados" :videos='publishedShorts' videosWidth="33%"/>
-    <VideoCategory title="Cortos Inéditos" :videos='unpublishedShorts' videosWidth="33%"/>
-    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="33%"/>
+    <VideoCategory title="Cortos Publicados" :videos='publishedShorts' videosWidth="33%" categoryType="published"/>
+    <VideoCategory title="Cortos Inéditos" :videos='unpublishedShorts' videosWidth="33%" categoryType="unpublished"/>
+    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="33%" categoryType="published"/>
     <Bio />
     <Footer />
   </div>
@@ -40,7 +40,7 @@ export default defineComponent({
   },
   setup() {
     const publishedShorts = ref([
-      {thumbnail: deshielo, blurredThumbnail: deshieloblur, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
+      {thumbnail: deshielo, blurredThumbnail: deshieloblur, urlId: "k92daVzN_8Q", title: "Deshielo Acondicionado", 
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -53,7 +53,7 @@ export default defineComponent({
       }
     ]);
     const unpublishedShorts = ref([
-      {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "-K-z-N3I4uI", title: "Nacherrestre (Título Provisional)",
+      {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "", title: "Nacherrestre (Título Provisional)",
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -62,9 +62,10 @@ export default defineComponent({
         cast: ["Ignacio Mariotti"], 
         others: [["Dirección Artística", ["Alan Lampert"]]],
         awards: []
-        }
+        },
+        info: {sinopsis: "Una noche solitaria, un jóven presencia lo que podrían ser señales extraterrestres en su casa.", information: "Corto realizado de noche, principalmente con luz natural, rodado en una noche."},
       }, 
-      {thumbnail: galeria, blurredThumbnail: galeriablur, urlId: "Qv8q1ENfWBA", title: "Galeria Boulevard (Título Provisional)", 
+      {thumbnail: galeria, blurredThumbnail: galeriablur, urlId: "", title: "Galeria Boulevard (Título Provisional)", 
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -73,9 +74,10 @@ export default defineComponent({
         cast: ["Aldana Casarrubia", "Patricio Sabogal"], 
         others: [["Diseño de Sonido", ["Aldana Casarrubia"]]],
         awards: []
-        }
+        },
+        info: {sinopsis: "Una jóven recorre una galeria mientras espera encontrarse con su cita.", information: "Filmado en distintas galerias del barrio de Flores, CABA."},
       }, 
-        {thumbnail: frutilla, blurredThumbnail: frutillablur, urlId: "j4z3xv2l9_k", title: "Frutilla", 
+        {thumbnail: frutilla, blurredThumbnail: frutillablur, urlId: "", title: "Frutilla", 
         credits: {
           type: "short",
           directors: ["Gabriela Velazquez", "Iván Guralnik"], 
@@ -84,7 +86,8 @@ export default defineComponent({
           cast: ["Aldana Casarrubia", "Elvis Alvarado"], 
           others: [["Productor", ["David Xu Barco"]]],
           awards: ["Aprobado para el ingreso a la ESCAC, Barcelona."]
-          }
+          },
+          info: {sinopsis: "Una fuerte discusión entre una pareja los lleva a reflexionar para sí mismos los lindos momentos que vivierons juntos.", information: "Escrito, rodado y editado en 24 horas como trabajo para ingreso a la ESCAC, Barcelona."},
       }
     ]);
     const youtubes = ref([

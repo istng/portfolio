@@ -4,7 +4,8 @@
     <div class="video-list-container">
     <ul class="video-list">
       <li class="video-item-list" v-for="video in videos" :key="video.urlId">
-        <Video :videoData='video' />
+        <Video v-if="categoryType === 'published'" :videoData='video' />
+        <UnpublishedVideo v-if="categoryType === 'unpublished'" :videoData='video' />
       </li>
     </ul>
   </div>
@@ -14,16 +15,19 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Video from '@/components/Video.vue';
+import UnpublishedVideo from '@/components/UnpublishedVideo.vue';
 
 export default defineComponent({
   name: 'VideoCategory',
   components: {
-    Video
+    Video,
+    UnpublishedVideo,
   },
   props: {
     title: String,
     videos: Array,
     videosWidth: String,
+    categoryType: String,
   },
 });
 </script>
