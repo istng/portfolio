@@ -16,9 +16,7 @@ import VideoCategory from '@/components/VideoCategory.vue';
 import Bio from '@/components/Bio.vue';
 import Footer from '@/components/Footer.vue';
 /*custom variables to import*/
-import { publishedShorts } from '@/variables/videos.ts';
-import { unpublishedShorts } from '@/variables/videos.ts';
-import { youtubes } from '@/variables/videos.ts';
+import { publishedShorts, unpublishedShorts, youtubes } from '@/variables/videos.ts';
 import { spanishText, englishText } from '@/variables/bioText.ts';
 
 export default defineComponent({
