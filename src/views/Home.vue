@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <Header />
-    <VideoCategory title="Cortos" :videos='shorts' videosWidth="33%"/>
+    <VideoCategory title="Cortos Publicados" :videos='publishedShorts' videosWidth="33%"/>
+    <VideoCategory title="Cortos Inéditos" :videos='unpublishedShorts' videosWidth="33%"/>
     <VideoCategory title="YouTube" :videos='youtubes' videosWidth="33%"/>
     <Bio />
     <Footer />
@@ -19,12 +20,14 @@ import obscured from '@/assets/obscured-by-sights.png';
 import notshop from '@/assets/not-in-the-shop.png';
 import nacherrestre from '@/assets/nacherrestre.png';
 import deshielo from '@/assets/deshielo.png';
+import galeria from '@/assets/galeria-cita.png';
 import frutilla from '@/assets/frutilla.png';
 import nakatomiblur from '@/assets/nakatomi-drive-blur.png';
 import obscuredblur from '@/assets/obscured-by-sights-blur.png';
 import notshopblur from '@/assets/not-in-the-shop-blur.png';
 import nacherrestreblur from '@/assets/nacherrestre-blur.png';
 import deshieloblur from '@/assets/deshielo-blur.png';
+import galeriablur from '@/assets/galeria-cita-blur.png';
 import frutillablur from '@/assets/frutilla-blur.png';
 
 export default defineComponent({
@@ -36,7 +39,20 @@ export default defineComponent({
     Footer,
   },
   setup() {
-    const shorts = ref([
+    const publishedShorts = ref([
+      {thumbnail: deshielo, blurredThumbnail: deshieloblur, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
+      credits: {
+        type: "short",
+        directors: ["Iván Guralnik", "Gabriela Velazquez"], 
+        writers: ["Iván Guralnik", "Gabriela Velazquez"], 
+        editors: ["Iván Guralnik", "Gabriela Velazquez"], 
+        cast: ["Franco Frizzo"], 
+        others: [],
+        awards: ["Cuarto lugar en la Octava Edición del Festival Internacional de Cine sobre el Trabajo."]
+        }
+      }
+    ]);
+    const unpublishedShorts = ref([
       {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "-K-z-N3I4uI", title: "Nacherrestre (Título Provisional)",
       credits: {
         type: "short",
@@ -48,15 +64,15 @@ export default defineComponent({
         awards: []
         }
       }, 
-      {thumbnail: deshielo, blurredThumbnail: deshieloblur, urlId: "Qv8q1ENfWBA", title: "Deshielo Acondicionado", 
+      {thumbnail: galeria, blurredThumbnail: galeriablur, urlId: "Qv8q1ENfWBA", title: "Galeria Boulevard (Título Provisional)", 
       credits: {
         type: "short",
         directors: ["Iván Guralnik", "Gabriela Velazquez"], 
         writers: ["Iván Guralnik", "Gabriela Velazquez"], 
         editors: ["Iván Guralnik", "Gabriela Velazquez"], 
-        cast: ["Franco Frizzo"], 
-        others: [],
-        awards: ["Cuarto lugar en la Octava Edición del Festival Internacional de Cine sobre el Trabajo."]
+        cast: ["Aldana Casarrubia", "Patricio Sabogal"], 
+        others: [["Diseño de Sonido", ["Aldana Casarrubia"]]],
+        awards: []
         }
       }, 
         {thumbnail: frutilla, blurredThumbnail: frutillablur, urlId: "j4z3xv2l9_k", title: "Frutilla", 
@@ -98,7 +114,8 @@ export default defineComponent({
       }
     ]);
     return {
-      shorts,
+      publishedShorts,
+      unpublishedShorts,
       youtubes,
     };
   }
