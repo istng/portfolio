@@ -9,5 +9,6 @@ future work
 
 current work
 	mention the variables and the hardcoding on readme
-	polish layout of unplished videos
+	polish layout of unpublished videos
+		and polish spacing between titles videos and other videos (example on youtubes mobile)
 	change color of flip icon depending on thumbnail
