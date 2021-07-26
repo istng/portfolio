@@ -67,6 +67,7 @@ export default defineComponent({
 <style type="text/css">
 .video-info {
   font-size: 0.6em;
+  padding-bottom: 1.2em;
 }
 
 .unpublished-video-container {
@@ -85,6 +86,7 @@ export default defineComponent({
   color: #e9a44d;
   text-align: center;
   font-weight: normal;
+  margin-bottom: 0.4em;
 }
 
 .video-thumbnail-container {
