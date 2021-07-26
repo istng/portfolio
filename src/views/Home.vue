@@ -2,7 +2,7 @@
   <div class="home">
     <Header />
     <VideoCategory title="Cortos" :videos='shorts' videosWidth="33%"/>
-    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="50%"/>
+    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="33%"/>
     <Bio />
     <Footer />
   </div>
@@ -15,11 +15,13 @@ import VideoCategory from '@/components/VideoCategory.vue';
 import Bio from '@/components/Bio.vue';
 import Footer from '@/components/Footer.vue';
 import nakatomi from '@/assets/nakatomi-drive.png';
+import obscured from '@/assets/obscured-by-sights.png';
 import notshop from '@/assets/not-in-the-shop.png';
 import nacherrestre from '@/assets/nacherrestre.png';
 import deshielo from '@/assets/deshielo.png';
 import frutilla from '@/assets/frutilla.png';
 import nakatomiblur from '@/assets/nakatomi-drive-blur.png';
+import obscuredblur from '@/assets/obscured-by-sights-blur.png';
 import notshopblur from '@/assets/not-in-the-shop-blur.png';
 import nacherrestreblur from '@/assets/nacherrestre-blur.png';
 import deshieloblur from '@/assets/deshielo-blur.png';
@@ -78,6 +80,14 @@ export default defineComponent({
         sounds: ["Future Shock, Herbie Hancock"]
         }
       }, 
+      {thumbnail: obscured, blurredThumbnail: obscuredblur, urlId: "NUVFjVWOpos", title: "obscured by sights", 
+      credits: {
+        type: "youtube",
+        creators: ["Iván Guralnik"], 
+        scenes: ["The Sopranos, 1999"],
+        sounds: ["Obscured By Clouds, Pink Floyd"]
+        }
+      },
       {thumbnail: notshop, blurredThumbnail: notshopblur, urlId: "rIZyQmS3L3w", title: "not in the shop", 
       credits: {
         type: "youtube",
