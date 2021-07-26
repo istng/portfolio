@@ -5,3 +5,9 @@ future work
 	make background darken softly when opening modal?
 	remove grid from thumbnails (not backs) seems to make some issue...
 	it would be nice to handle the back slide swipe to close a video when its open
+
+
+current work
+	mention the variables and the hardcoding on readme
+	polish layout of unplished videos
+	change color of flip icon depending on thumbnail
