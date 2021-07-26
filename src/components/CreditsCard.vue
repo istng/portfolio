@@ -94,6 +94,7 @@ export default defineComponent({
 }
 .back-credits {
   color: white;
+  font-size: 0.8rem;
   padding: 5%;
 }
 .credits-section:not(:last-child) {
@@ -105,6 +106,6 @@ export default defineComponent({
   }
 .credits-section:not(:last-child) {
   margin-bottom: 0.8rem;
-}
+  }
 }
 </style>
