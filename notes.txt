@@ -1,0 +1,7 @@
+future work
+	use a better domain name
+	youtube throws some warning when opening a video
+	security issues?
+	make background darken softly when opening modal?
+	remove grid from thumbnails (not backs) seems to make some issue...
+	it would be nice to handle the back slide swipe to close a video when its open
