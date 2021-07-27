@@ -19,7 +19,7 @@
             </span>
           </template>
         </FlipCard>
-        <h3 class="video-title">{{ videoData.title }}</h3>
+        <h3 class="unpublished-video-title">{{ videoData.title }}</h3>
       </div>
       <div class="video-info">
         <div class="sinopsis">
@@ -39,7 +39,7 @@ import FlipCard from '@/components/FlipCard.vue';
 import CreditsCard from '@/components/CreditsCard.vue';
 
 export default defineComponent({
-  name: 'Video',
+  name: 'UnpublishedVideo',
   components: {
     FlipCard,
     CreditsCard,
@@ -54,7 +54,12 @@ export default defineComponent({
 <style type="text/css">
 .video-info {
   font-size: 0.6em;
-  padding-bottom: 1.2em;
+  padding-bottom: 2em;
+}
+@media (max-width: 768px) {
+  .video-info {
+    font-size: 0.75em;
+  }
 }
 
 .unpublished-video-container {
@@ -69,11 +74,12 @@ export default defineComponent({
   width: 100%;
   border-radius: 25px;
 }
-.video-title {
+.unpublished-video-title {
   color: #e9a44d;
   text-align: center;
   font-weight: normal;
   margin-bottom: 0.4em;
+  margin-top: 0.4em;
 }
 
 .video-thumbnail-container {

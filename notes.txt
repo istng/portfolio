@@ -8,7 +8,6 @@ future work
 
 
 current work
-	mention the variables and the hardcoding on readme
-	polish layout of unpublished videos
-		and polish spacing between titles videos and other videos (example on youtubes mobile)
 	change color of flip icon depending on thumbnail
+	fix nakatomi drive not showing on mobile
+	abstract variables that customize web, so to make another web to show?

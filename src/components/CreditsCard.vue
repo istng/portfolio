@@ -104,8 +104,8 @@ export default defineComponent({
   .back-credits {
     font-size: 0.9rem;
   }
-.credits-section:not(:last-child) {
-  margin-bottom: 0.8rem;
+  .credits-section:not(:last-child) {
+    margin-bottom: 0.8rem;
   }
 }
 </style>
