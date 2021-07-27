@@ -2,8 +2,8 @@
   <div>
     <h4 class="bio-title">Bio</h4>
     <div class="bio-body-container">
-      <p class="bio-body" lang="es"> {{ spanishText }} </p>
-      <p class="bio-body" lang="en"> {{ englishText }} </p>
+      <p class="bio-body" lang="es"> {{ text.spanish }} </p>
+      <p class="bio-body" lang="en"> {{ text.english }} </p>
     </div>
   </div>
 </template>
@@ -16,8 +16,7 @@ export default defineComponent({
   components: {
   },
   props: {
-    spanishText: String,
-    englishText: String,
+    text: Object,
   },
 });
 </script>
