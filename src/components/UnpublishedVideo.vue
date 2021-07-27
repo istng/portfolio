@@ -8,7 +8,7 @@
               <div class="video-thumbnail-container">
                 <img class='video-thumbnail' :src='videoData.thumbnail'>
                 <div class="coming-soon-text">
-                  Próximamente
+                  {{ comingSoonText }}
                 </div>
               </div>
             </span>
@@ -46,6 +46,7 @@ export default defineComponent({
   },
   props: {
     videoData: Object,
+    comingSoonText: String,
   },
   setup(props) {
     const youtubeUrl = ref('https://www.youtube.com/embed/');

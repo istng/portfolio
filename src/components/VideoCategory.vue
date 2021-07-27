@@ -5,7 +5,7 @@
     <ul class="video-list">
       <li class="video-item-list" v-for="video in videos" :key="video.urlId">
         <Video v-if="categoryType === 'published'" :videoData='video' />
-        <UnpublishedVideo v-if="categoryType === 'unpublished'" :videoData='video' />
+        <UnpublishedVideo v-if="categoryType === 'unpublished'" :videoData='video' :comingSoonText='comingSoonText' />
       </li>
     </ul>
   </div>
@@ -28,6 +28,7 @@ export default defineComponent({
     videos: Array,
     videosWidth: String,
     categoryType: String,
+    comingSoonText: String,
   },
 });
 </script>
