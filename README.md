@@ -24,7 +24,9 @@ There are six main components used in home with roughly this order:
 
 Each component is basically what is called. Video components are nested on Video Category components, and Credits Card are nested within its corresponding Video components. This is because each video category has many videos, and each video has credits.  
 The effect by which the video _iframe_ appears on screen above everything is made with _modal logic_ inside the video components.  
-There is an extra component called `FlipCard.vue`. This component is used to make the flip effect between the thumbnail of a video and its credits card.
+There is an extra component called `FlipCard.vue`. This component is used to make the flip effect between the thumbnail of a video and its credits card.  
+Currently, I am working on abstracting all _hardcoded_ variables to the uppermost component possible, so that the web can be easily reused with different content. Initially I _hardcoded_ all the information because it would be only my information displayed, so it was not necessary to have it as external variables, let alone as api calls to a backend.  
+But now, it is possible to customize the content, and it would be possible to implement api calls. These variables are stored on the folder `variables`.
 
 ### Future Work
 
