@@ -140,6 +140,7 @@ i.backFlipBtn {
 }
 .flip-icon {
   width: 62%;
-  opacity: 0.5;
+  opacity: 0.35;
+  filter: invert(1);
 }
 </style>
