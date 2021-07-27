@@ -48,20 +48,6 @@ export default defineComponent({
     videoData: Object,
     comingSoonText: String,
   },
-  setup(props) {
-    const youtubeUrl = ref('https://www.youtube.com/embed/');
-    const show = ref(false);
-
-    const openVideo = () => {
-      show.value = ! show.value;
-    };
-
-    return {
-      youtubeUrl,
-      show,
-      openVideo,
-    };
-  }
 });
 </script>
 

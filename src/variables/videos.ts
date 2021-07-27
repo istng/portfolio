@@ -29,7 +29,7 @@ export const publishedShorts = ref([
   }
 ]);
 export const unpublishedShorts = ref([
-  {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, urlId: "", title: "Nacherrestre (Título Provisional)",
+  {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, title: "Nacherrestre (Título Provisional)",
   credits: {
     type: "short",
     directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -41,7 +41,7 @@ export const unpublishedShorts = ref([
     },
     info: {sinopsis: "Una noche solitaria, un jóven presencia lo que podrían ser señales extraterrestres en su casa.", information: "Corto realizado de noche, principalmente con luz artifical diegética, rodado en una sesión."},
   }, 
-  {thumbnail: galeria, blurredThumbnail: galeriablur, urlId: "", title: "Galeria Boulevard (Título Provisional)", 
+  {thumbnail: galeria, blurredThumbnail: galeriablur, title: "Galeria Boulevard (Título Provisional)", 
   credits: {
     type: "short",
     directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -53,7 +53,7 @@ export const unpublishedShorts = ref([
     },
     info: {sinopsis: "Una jóven recorre una galeria mientras espera encontrarse con su cita.", information: "Filmado en distintas galerias del barrio de Flores, CABA."},
   }, 
-    {thumbnail: frutilla, blurredThumbnail: frutillablur, urlId: "", title: "Frutilla", 
+    {thumbnail: frutilla, blurredThumbnail: frutillablur, title: "Frutilla", 
     credits: {
       type: "short",
       directors: ["Gabriela Velazquez", "Iván Guralnik"], 
