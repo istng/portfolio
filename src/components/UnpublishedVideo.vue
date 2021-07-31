@@ -55,6 +55,7 @@ export default defineComponent({
 .video-info {
   font-size: 0.6em;
   padding-bottom: 2em;
+  color: white;
 }
 @media (max-width: 768px) {
   .video-info {
@@ -101,6 +102,7 @@ export default defineComponent({
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+  color: white;
 }
 @media (min-width: 770px) {
   .coming-soon-text:hover {
