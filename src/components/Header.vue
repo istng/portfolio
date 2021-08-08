@@ -27,14 +27,6 @@ export default defineComponent({
   name: 'Header',
   components: {
     FontAwesomeIcon,
-  },
-  setup() {
-    const copy = async () => {
-      await navigator.clipboard.writeText("ivanstng@gmail.com");
-    };
-    return {
-      copy,
-    };
   }
 });
 </script>
