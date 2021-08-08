@@ -5,14 +5,14 @@
         <slot class="front-card" name="front"></slot>
         <div class="frontFlipBtn" 
             v-on:click="flipped=true">
-            <img class="flip-icon" :src="flipicon">
+            <img class="flip-icon" :src="flipbutton">
         </div>
       </div>
       <div class="back" v-on:click="flipped=false">
         <slot class="back-card" name="back"></slot>
         <div class="backFlipBtn" 
             >
-            <img class="flip-icon" :src="flipicon" >
+            <img class="flip-icon" :src="flipbutton" >
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import flipicon from '@/assets/redo-alt-solid.png';
+import flipbutton from '@/assets/flip-button.png';
 
 export default defineComponent({
   name: 'FlipCard',
@@ -29,7 +29,7 @@ export default defineComponent({
     const flipped = ref(false)
     return {
       flipped,
-      flipicon,
+      flipbutton,
     }
   }
 });
@@ -139,8 +139,12 @@ i.backFlipBtn {
   left:0;
 }
 .flip-icon {
-  width: 62%;
+  width: 67%;
   opacity: 0.35;
-  filter: invert(1);
+}
+.flip-icon:hover {
+  width: 67%;
+  opacity: 0.35;
+  cursor: pointer;
 }
 </style>
