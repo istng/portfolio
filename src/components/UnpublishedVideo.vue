@@ -6,7 +6,7 @@
           <template v-slot:front>
             <span>
               <div class="video-thumbnail-container">
-                <img class='video-thumbnail' :src='videoData.thumbnail'>
+                <img class="video-thumbnail" :src="videoData.thumbnail" />
                 <div class="coming-soon-text">
                   {{ comingSoonText }}
                 </div>
@@ -15,7 +15,10 @@
           </template>
           <template v-slot:back>
             <span>
-              <CreditsCard :credits='videoData.credits' :backThumbnail='videoData.blurredThumbnail' />
+              <CreditsCard
+                :credits="videoData.credits"
+                :backThumbnail="videoData.blurredThumbnail"
+              />
             </span>
           </template>
         </FlipCard>
@@ -34,12 +37,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
-import FlipCard from '@/components/FlipCard.vue';
-import CreditsCard from '@/components/CreditsCard.vue';
+import { defineComponent, ref } from "vue";
+import FlipCard from "@/components/FlipCard.vue";
+import CreditsCard from "@/components/CreditsCard.vue";
 
 export default defineComponent({
-  name: 'UnpublishedVideo',
+  name: "UnpublishedVideo",
   components: {
     FlipCard,
     CreditsCard,
@@ -98,10 +101,10 @@ export default defineComponent({
   align-items: center;
   border-radius: 25px;
   opacity: 0;
-  background-color: #4B4B4B;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  background-color: #4b4b4b;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
   color: white;
 }
 @media (min-width: 770px) {
@@ -109,5 +112,4 @@ export default defineComponent({
     opacity: 0.6;
   }
 }
-
 </style>

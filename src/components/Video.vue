@@ -4,14 +4,17 @@
       <template v-slot:front>
         <span>
           <div class="video-thumbnail-container" @click="openVideo">
-            <img class='video-thumbnail' :src='videoData.thumbnail'>
-            <img class="play-button" :src='playbutton'>
+            <img class="video-thumbnail" :src="videoData.thumbnail" />
+            <img class="play-button" :src="playbutton" />
           </div>
         </span>
       </template>
       <template v-slot:back>
         <span>
-          <CreditsCard :credits='videoData.credits' :backThumbnail='videoData.blurredThumbnail' />
+          <CreditsCard
+            :credits="videoData.credits"
+            :backThumbnail="videoData.blurredThumbnail"
+          />
         </span>
       </template>
     </FlipCard>
@@ -19,11 +22,14 @@
 
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
-      <div>
-        <img class="close-button" :src="closebutton">
-      </div>
         <div>
-          <iframe class="video-window" :src='youtubeUrl + videoData.urlId + "?autoplay=1"' @onClick='other'></iframe>
+          <img class="close-button" :src="closebutton" />
+        </div>
+        <div>
+          <iframe
+            class="video-window"
+            :src="youtubeUrl + videoData.urlId + '?autoplay=1'"
+          ></iframe>
         </div>
       </div>
     </teleport>
@@ -31,14 +37,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
-import FlipCard from '@/components/FlipCard.vue';
-import CreditsCard from '@/components/CreditsCard.vue';
-import playbutton from '@/assets/play-button.png';
-import closebutton from '@/assets/close-button.png';
+import { defineComponent, ref } from "vue";
+import FlipCard from "@/components/FlipCard.vue";
+import CreditsCard from "@/components/CreditsCard.vue";
+import playbutton from "@/assets/play-button.png";
+import closebutton from "@/assets/close-button.png";
 
 export default defineComponent({
-  name: 'Video',
+  name: "Video",
   components: {
     FlipCard,
     CreditsCard,
@@ -47,11 +53,11 @@ export default defineComponent({
     videoData: Object,
   },
   setup(props) {
-    const youtubeUrl = ref('https://www.youtube.com/embed/');
+    const youtubeUrl = ref("https://www.youtube.com/embed/");
     const show = ref(false);
 
     const openVideo = () => {
-      show.value = ! show.value;
+      show.value = !show.value;
     };
 
     return {
@@ -61,7 +67,7 @@ export default defineComponent({
       playbutton,
       closebutton,
     };
-  }
+  },
 });
 </script>
 
@@ -91,10 +97,10 @@ export default defineComponent({
   width: 100%;
   border-radius: 25px;
   opacity: 0;
-  background-color: #4B4B4B;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  background-color: #4b4b4b;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
 }
 @media (min-width: 770px) {
   .play-button:hover {
@@ -115,11 +121,11 @@ export default defineComponent({
   left: 3.5%;
   filter: contrast(52%);
 }
-.video-window{
-   border: 0;
-   height: 85%;
-   width: 85%;
-   position: absolute;
+.video-window {
+  border: 0;
+  height: 85%;
+  width: 85%;
+  position: absolute;
 }
 @media (max-width: 768px) {
   .video-window {
@@ -132,11 +138,14 @@ export default defineComponent({
 
 .modal {
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
