@@ -7,8 +7,6 @@ future work
 
 
 current work
-	beautify unpublished video card
-	make background darken softly when opening modal?
 	publish to firebase
 	fix nakatomi drive not showing on mobile
 	abstract variables that customize web, so to make another web to show?
