@@ -53,5 +53,9 @@ export default defineComponent({
   .unpublished-card-container {
     padding: 25px;
   }
+  .synopsis-text,
+  .information-text {
+    font-size: large;
+  }
 }
 </style>
