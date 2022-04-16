@@ -59,7 +59,7 @@ export const unpublishedShorts = ref([
     },
     info: {
       comingSoonText: "Próximamente",
-      synopsis: "Una jóven recorre una galeria mientras espera encontrarse con su cita.", 
+      synopsis: "Una jóven recorre una galeria de Buenos Aires mientras espera encontrarse con su cita.", 
       information: "Filmado en distintas galerias del barrio de Flores, CABA."
     },
     categoryType: "unpublished"
