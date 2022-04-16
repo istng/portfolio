@@ -21,6 +21,7 @@
     <h3 class="video-title">{{ videoData.title }}</h3>
 
     <teleport to="body">
+      <Transition>
       <div class="modal" v-if="show" @click="show = false">
         <div class="published-video-modal" v-if="videoData.categoryType == 'published'">
           <div>
@@ -42,6 +43,7 @@
           />
         </div>
       </div>
+      </Transition>
     </teleport>
   </div>
 </template>
@@ -175,5 +177,16 @@ export default defineComponent({
 
 .modal:hover {
   cursor: pointer;
+}
+
+.v-enter-active {
+  transition: opacity 0.5s ease;
+}
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
