@@ -22,9 +22,9 @@
 
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
-        <div v-if="videoData.categoryType == 'published'">
+        <div class="published-video-modal" v-if="videoData.categoryType == 'published'">
           <div>
-            <img class="close-button" :src="closebutton" />
+            <img class="close-video-button" :src="closebutton" />
           </div>
           <div>
             <iframe
@@ -33,7 +33,10 @@
             ></iframe>
           </div>
         </div>
-        <div v-else>
+        <div class="unpublished-video-modal" v-else>
+          <div>
+            <img class="close-unpublished-card-button" :src="closebutton" />
+          </div>
           <UnpublishedVideo
             :videoInfo="videoData.info"
           />
@@ -116,20 +119,25 @@ export default defineComponent({
     opacity: 0.6;
     cursor: pointer;
   }
-  .close-button {
+  .close-video-button,
+  .close-unpublished-card-button {
     display: none;
     visibility: hidden;
   }
 }
 
-.close-button {
+.close-video-button,
+.close-unpublished-card-button {
   width: 8%;
   z-index: 4;
   position: absolute;
-  top: 30%;
-  left: 3.5%;
   filter: contrast(52%);
+  left: 3.5%;
 }
+.close-video-button {
+  top: 30%;
+}
+
 .video-window {
   border: 0;
   height: 85%;
@@ -158,12 +166,13 @@ export default defineComponent({
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
-.modal div {
+.published-video-modal div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .modal:hover {
   cursor: pointer;
 }
