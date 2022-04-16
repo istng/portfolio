@@ -22,14 +22,21 @@
 
     <teleport to="body">
       <div class="modal" v-if="show" @click="show = false">
-        <div>
-          <img class="close-button" :src="closebutton" />
+        <div v-if="videoData.categoryType == 'published'">
+          <div>
+            <img class="close-button" :src="closebutton" />
+          </div>
+          <div>
+            <iframe
+              class="video-window"
+              :src="youtubeUrl + videoData.urlId + '?autoplay=1'"
+            ></iframe>
+          </div>
         </div>
-        <div>
-          <iframe
-            class="video-window"
-            :src="youtubeUrl + videoData.urlId + '?autoplay=1'"
-          ></iframe>
+        <div v-else>
+          <UnpublishedVideo
+            :videoInfo="videoData.info"
+          />
         </div>
       </div>
     </teleport>
@@ -40,6 +47,7 @@
 import { defineComponent, ref } from "vue";
 import FlipCard from "@/components/FlipCard.vue";
 import CreditsCard from "@/components/CreditsCard.vue";
+import UnpublishedVideo from "@/components/UnpublishedVideo.vue"
 import playbutton from "@/assets/play-button.png";
 import closebutton from "@/assets/close-button.png";
 
@@ -48,6 +56,7 @@ export default defineComponent({
   components: {
     FlipCard,
     CreditsCard,
+    UnpublishedVideo,
   },
   props: {
     videoData: Object,

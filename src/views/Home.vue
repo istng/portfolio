@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <Header />
-    <VideoCategory title="Cortos Publicados" :videos='publishedShorts' videosWidth="33%" categoryType="published"/>
-    <VideoCategory title="Cortos Inéditos" :videos='unpublishedShorts' videosWidth="33%" categoryType="unpublished" comingSoonText="Próximamente"/>
-    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="33%" categoryType="published"/>
+    <VideoCategory title="Cortos Publicados" :videos='publishedShorts' videosWidth="33%" />
+    <VideoCategory title="Cortos Inéditos" :videos='unpublishedShorts' videosWidth="33%" />
+    <VideoCategory title="YouTube" :videos='youtubes' videosWidth="33%" />
     <Bio :text='bioText' />
     <Footer />
   </div>

@@ -25,11 +25,12 @@ export const publishedShorts = ref([
     cast: ["Franco Frizzo"], 
     others: [],
     awards: ["Cuarto lugar en la Octava Edición del Festival Internacional de Cine sobre el Trabajo."]
-    }
+    },
+    categoryType: "published"
   }
 ]);
 export const unpublishedShorts = ref([
-  {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, title: "Nacherrestre (Título Provisional)",
+  {thumbnail: nacherrestre, blurredThumbnail: nacherrestreblur, title: "Alienado",
   credits: {
     type: "short",
     directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -39,7 +40,12 @@ export const unpublishedShorts = ref([
     others: [["Dirección Artística", ["Alan Lampert"]]],
     awards: []
     },
-    info: {sinopsis: "Una noche solitaria, un jóven presencia lo que podrían ser señales extraterrestres en su casa.", information: "Corto realizado de noche, principalmente con luz artifical diegética, rodado en una sesión."},
+    info: {
+      comingSoonText: "Próximamente",
+      synopsis: "Una noche solitaria, un jóven presencia lo que podrían ser señales extraterrestres en su casa.", 
+      information: "Corto realizado de noche, principalmente con luz artifical diegética, rodado en una sesión."
+    },
+    categoryType: "unpublished"
   }, 
   {thumbnail: galeria, blurredThumbnail: galeriablur, title: "Galeria Boulevard (Título Provisional)", 
   credits: {
@@ -51,7 +57,12 @@ export const unpublishedShorts = ref([
     others: [["Diseño de Sonido", ["Aldana Casarrubia"]]],
     awards: []
     },
-    info: {sinopsis: "Una jóven recorre una galeria mientras espera encontrarse con su cita.", information: "Filmado en distintas galerias del barrio de Flores, CABA."},
+    info: {
+      comingSoonText: "Próximamente",
+      synopsis: "Una jóven recorre una galeria mientras espera encontrarse con su cita.", 
+      information: "Filmado en distintas galerias del barrio de Flores, CABA."
+    },
+    categoryType: "unpublished"
   }, 
     {thumbnail: frutilla, blurredThumbnail: frutillablur, title: "Frutilla", 
     credits: {
@@ -63,8 +74,13 @@ export const unpublishedShorts = ref([
       others: [["Productor", ["David Xu Barco"]]],
       awards: ["Aprobado para el ingreso a la ESCAC, Barcelona."]
       },
-      info: {sinopsis: "Una fuerte discusión entre una pareja los lleva a reflexionar para sí mismos los lindos momentos que vivierons juntos.", information: "Escrito, rodado y editado en 24 horas como trabajo para el ingreso a la ESCAC, Barcelona."},
-  }
+      info: {
+        comingSoonText: "Próximamente",
+        synopsis: "Una fuerte discusión entre una pareja los lleva a reflexionar para sí mismos los lindos momentos que vivierons juntos.", 
+        information: "Escrito, rodado y editado en 24 horas como trabajo para el ingreso a la ESCAC, Barcelona."
+      },
+      categoryType: "unpublished"
+    }
 ]);
 export const youtubes = ref([
   {thumbnail: nakatomi, blurredThumbnail: nakatomiblur, urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
@@ -73,7 +89,8 @@ export const youtubes = ref([
     creators: ["Iván Guralnik"], 
     scenes: ["Die Hard, 1988"],
     sounds: ["Autodrive, Herbie Hancock"]
-    }
+    },
+    categoryType: "published"
   }, 
   {thumbnail: obscured, blurredThumbnail: obscuredblur, urlId: "NUVFjVWOpos", title: "obscured by sights", 
   credits: {
@@ -81,7 +98,8 @@ export const youtubes = ref([
     creators: ["Iván Guralnik"], 
     scenes: ["The Sopranos, 1999"],
     sounds: ["Obscured By Clouds, Pink Floyd"]
-    }
+    },
+    categoryType: "published"
   },
   {thumbnail: notshop, blurredThumbnail: notshopblur, urlId: "rIZyQmS3L3w", title: "not in the shop", 
   credits: {
@@ -89,6 +107,7 @@ export const youtubes = ref([
     creators: ["Iván Guralnik"], 
     scenes: ["Star Trek: Deep Space 9, 1993"],
     sounds: ["Prologue & Subtitle I, Dragon Ball Z OST"]
-    }
+    },
+    categoryType: "published"
   }
 ]);

@@ -4,8 +4,7 @@
     <div class="video-list-container">
     <ul class="video-list">
       <li class="video-item-list" v-for="video in videos" :key="video.urlId">
-        <Video v-if="categoryType === 'published'" :videoData='video' />
-        <UnpublishedVideo v-if="categoryType === 'unpublished'" :videoData='video' :comingSoonText='comingSoonText' />
+        <Video :videoData='video' />
       </li>
     </ul>
   </div>
@@ -15,13 +14,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Video from '@/components/Video.vue';
-import UnpublishedVideo from '@/components/UnpublishedVideo.vue';
 
 export default defineComponent({
   name: 'VideoCategory',
   components: {
     Video,
-    UnpublishedVideo,
   },
   props: {
     title: String,
@@ -47,6 +44,7 @@ export default defineComponent({
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  
   /*make space between title and video list smaller*/
   margin-top: 0;
   margin-right: -0.5rem;
