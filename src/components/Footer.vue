@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5 class="legal-notice">© 2021 Iván Guralnik</h5>
+    <h5 class="legal-notice">© 2022 Iván Guralnik</h5>
   </div>
 </template>
 
