@@ -8,5 +8,6 @@ future work
 
 
 current work
+	fix misspelling issues with bio
 	get device/browser language to set language of text
 	abstract variables that customize web, so to make another web to show?
