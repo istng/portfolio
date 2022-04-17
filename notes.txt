@@ -1,5 +1,6 @@
 future work
 	use a better domain name
+	hunt bug of deploying breaks flex on desktop
 	youtube throws some warning when opening a video
 	security issues?
 	remove grid from thumbnails (not backs) seems to make some issue...
