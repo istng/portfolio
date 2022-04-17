@@ -94,16 +94,13 @@ export default defineComponent({
 }
 .back-credits {
   color: white;
-  font-size: 0.8rem;
+  font-size: large;
   padding: 5%;
 }
 .credits-section:not(:last-child) {
   margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
-  .back-credits {
-    font-size: 0.9rem;
-  }
   .credits-section:not(:last-child) {
     margin-bottom: 0.8rem;
   }
