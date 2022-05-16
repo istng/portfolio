@@ -30,7 +30,7 @@
           <div>
             <iframe
               class="video-window"
-              :src="youtubeUrl + videoData.urlId + '?autoplay=1'"
+              :src="videoData.baseUrl + videoData.urlId + '?autoplay=1'"
             ></iframe>
           </div>
         </div>
@@ -67,7 +67,6 @@ export default defineComponent({
     videoData: Object,
   },
   setup(props) {
-    const youtubeUrl = ref("https://www.youtube.com/embed/");
     const show = ref(false);
 
     const openVideo = () => {
@@ -75,7 +74,6 @@ export default defineComponent({
     };
 
     return {
-      youtubeUrl,
       show,
       openVideo,
       playbutton,

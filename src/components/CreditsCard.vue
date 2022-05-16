@@ -31,7 +31,7 @@
             </div>
           </div>
         </div>
-        <div v-if="credits.type == 'youtube'">
+        <div v-if="credits.type == 'edits'">
           <div class="credits-section">
             <div class="credits-line">
               <strong>Idea y edición:</strong> {{ credits.creators.join(', ') }}

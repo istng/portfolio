@@ -7,6 +7,7 @@ import nacherrestre from '@/assets/nacherrestre.png';
 import deshielo from '@/assets/deshielo.png';
 import galeria from '@/assets/galeria-cita.png';
 import frutilla from '@/assets/frutilla.png';
+import elaborando from '@/assets/elaborando.png';
 import nakatomiblur from '@/assets/nakatomi-drive-blur.png';
 import obscuredblur from '@/assets/obscured-by-sights-blur.png';
 import notshopblur from '@/assets/not-in-the-shop-blur.png';
@@ -14,9 +15,10 @@ import nacherrestreblur from '@/assets/nacherrestre-blur.png';
 import deshieloblur from '@/assets/deshielo-blur.png';
 import galeriablur from '@/assets/galeria-cita-blur.png';
 import frutillablur from '@/assets/frutilla-blur.png';
+import elaborandoblur from '@/assets/elaborando-blur.png';
 
 export const publishedShorts = ref([
-  {thumbnail: deshielo, blurredThumbnail: deshieloblur, urlId: "k92daVzN_8Q", title: "Deshielo Acondicionado", 
+  {thumbnail: deshielo, blurredThumbnail: deshieloblur, baseUrl: "https://www.youtube.com/embed/" ,urlId: "k92daVzN_8Q", title: "Deshielo Acondicionado", 
   credits: {
     type: "short",
     directors: ["Iván Guralnik", "Gabriela Velazquez"], 
@@ -82,31 +84,40 @@ export const unpublishedShorts = ref([
       categoryType: "unpublished"
     }
 ]);
-export const youtubes = ref([
-  {thumbnail: nakatomi, blurredThumbnail: nakatomiblur, urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
+export const edits = ref([
+  {thumbnail: nakatomi, blurredThumbnail: nakatomiblur, baseUrl: "https://www.youtube.com/embed/" ,urlId: "ve8gZ3UEMlU", title: "nakatomi drive", 
   credits: {
-    type: "youtube",
+    type: "edits",
     creators: ["Iván Guralnik"], 
     scenes: ["Die Hard, 1988"],
     sounds: ["Autodrive, Herbie Hancock"]
     },
     categoryType: "published"
   }, 
-  {thumbnail: obscured, blurredThumbnail: obscuredblur, urlId: "NUVFjVWOpos", title: "obscured by sights", 
+  {thumbnail: obscured, blurredThumbnail: obscuredblur, baseUrl: "https://www.youtube.com/embed/" ,urlId: "NUVFjVWOpos", title: "obscured by sights", 
   credits: {
-    type: "youtube",
+    type: "edits",
     creators: ["Iván Guralnik"], 
     scenes: ["The Sopranos, 1999"],
     sounds: ["Obscured By Clouds, Pink Floyd"]
     },
     categoryType: "published"
   },
-  {thumbnail: notshop, blurredThumbnail: notshopblur, urlId: "rIZyQmS3L3w", title: "not in the shop", 
+  {thumbnail: notshop, blurredThumbnail: notshopblur, baseUrl: "https://www.youtube.com/embed/" ,urlId: "rIZyQmS3L3w", title: "not in the shop", 
   credits: {
-    type: "youtube",
+    type: "edits",
     creators: ["Iván Guralnik"], 
     scenes: ["Star Trek: Deep Space 9, 1993"],
     sounds: ["Prologue & Subtitle I, Dragon Ball Z OST"]
+    },
+    categoryType: "published"
+  },
+  {thumbnail: elaborando, blurredThumbnail: elaborandoblur, baseUrl: "https://player.vimeo.com/video/", urlId: "653040481?h=b8e5d35409", title: "elaborando cataratas de alegria", 
+  credits: {
+    type: "edits",
+    creators: ["Iván Guralnik"], 
+    scenes: ["Youtuber Juan Carlos Bertonatti, 2019-2022"],
+    sounds: ["As Wichita Falls so Falls Wichita Falls, Pat Metheny"]
     },
     categoryType: "published"
   }
