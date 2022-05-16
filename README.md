@@ -32,7 +32,8 @@ But now, it is possible to customize the content, and it would be possible to im
 
 By this point the web is usable and stable, but in the future it would be nice to include this changes:
 
-- Smooth background darkening when opening a video
+- Fix npm audit
+- First auto flip of credits card to show functionallity, or design another type of credits showing
 - Handle swipe back gesture to close opened video on mobile
 - Customize iframe to have a standarized look, independent of video provider
 - Copy email to clipboard on email link clicked
